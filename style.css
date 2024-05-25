@@ -4,14 +4,17 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #000000;
     padding: 20px;
     text-align: center;
+    color: ghostwhite;
 }
 
 h1 {
     margin-bottom: 5px; 
 }
+
+
 
 #about {
     padding: 20px;
@@ -35,8 +38,8 @@ h1 {
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background-color: black;
+    color:ghostwhite;
     text-align: center;
     padding: 10px;
 }
@@ -53,3 +56,9 @@ footer {
         color: white;
     }
 }
+
+
+.spaced-list li {
+    margin-bottom: 10px; /* Adjust the value as needed */
+}
+
