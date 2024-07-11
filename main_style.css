@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+main {
+    margin-top: 100px; /* Adjust based on header height */
+    margin-bottom: 50px; /* New: Add space above the footer */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Changed from 80vh to auto */
+    min-height: 80vh; /* New: Ensure it's at least 80vh tall but can grow */
+}
+
+header {
+    padding: 20px; /* Corrected from auto */
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px; /* New: Ensure space above the footer */
+}
+
+
+
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white;
+    background-color: red;
+}
+
+.fs-4 {
+    color: white;
+}
+
+.text-body-emphasis {
+    color: white !important;
+}
+
+
+
+.text-body-secondary {
+    color: white !important;
+}
+
+
+.nav-link:hover {
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

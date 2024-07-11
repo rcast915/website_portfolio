@@ -1,0 +1,31 @@
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: #000 !important;
+}
+
+
+.btn-primary {
+    background-color: #000 !important;
+    border-color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+
+.btn-outline-light:hover {
+    background-color: red !important;
+    border-color: red !important;
+    color: white !important;
+}
+
+
+
+
+
+
+
+
