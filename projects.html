@@ -16,6 +16,13 @@
     />
     <link rel="stylesheet" href="main_style.css" />
     <link rel="stylesheet" href="projects.css" />
+    
+    <style>
+        /* Make text-muted white for better visibility on dark background */
+        .text-muted {
+            color: white !important;
+        }
+    </style>
   </head>
   <body>
     <!-- header-->
@@ -32,7 +39,7 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link">Timeline</a></li>
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">Projects</a>
         </li>
@@ -52,45 +59,88 @@
             </div>
           </div>
 
+            <!-- First Row of Projects -->
+            <div class="row align-items-md-stretch">
+              <!-- Research Project -->
+              <div class="col-md-6 mb-4">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                  <h2>FBPINN Optimization Research</h2>
+                  <h4 class="text-muted">(PNNL)</h4>
+                  <p>Conducted research on optimizations for Fourier-based Physics-Informed Neural Networks (FBPINNs) during my internship at Pacific Northwest National Laboratory. 
+                    I investigated compiler-level optimizations for FBPINNs, a specialized type of PINN that uses a series of overlapping domain decompositions 
+                    to more accurately represent complex physics problems. My work focused on developing optimization techniques to improve the performance 
+                    and efficiency of existing FBPINN implementations in scientific computing applications.
+                  </p>
+                  <div class="mt-3">
+                    <span class="badge bg-light text-dark me-2">Python</span>
+                    <span class="badge bg-light text-dark me-2">Machine Learning</span>
+                    <span class="badge bg-light text-dark me-2">Compiler Optimization</span>
+                    <span class="badge bg-light text-dark me-2">Scientific Computing</span>
+                  </div>
+                  <a href="https://www.sciencedirect.com/science/article/pii/S0045782524003724" class="btn btn-outline-light mt-3" role="button" target="_blank">View FBPINN Paper</a>
+                </div>
+              </div>
+              <!-- Research Assistant Work -->
+              <div class="col-md-6 mb-4">
+                <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+                  <h2>Double-Single Arithmetic Research</h2>
+                  <h4 class="text-muted">(UTEP)</h4>
+                  <p>Investigated the use of double-single arithmetic for systems with limited double precision support during my research assistantship at UTEP. 
+                    I developed a custom compiler pass using LLVM that automatically transforms given programs to use double-single arithmetic, 
+                    enabling higher precision computations on hardware with limited double precision capabilities. 
+                  </p>
+                  <div class="mt-3">
+                    <span class="badge bg-light text-dark me-2">LLVM</span>
+                    <span class="badge bg-light text-dark me-2">Compiler Design</span>
+                    <span class="badge bg-light text-dark me-2">Numerical Analysis</span>
+                    <span class="badge bg-light text-dark me-2">C++</span>
+                  </div>
+                
+                </div>
+              </div>
+            </div>
 
+            <!-- Second Row of Projects -->
             <div class="row align-items-md-stretch">
               <!-- Master Chefs -->
-              <div class="col-md-6">
+              <div class="col-md-6 mb-4">
                 <div class="h-100 p-5 bg-body-tertiary border rounded-3">
                   <h2>Masterchefs</h2>
-                  <h4>(Google Tech Exchange)</h4>
-                  <p> I developed a full-stack Streamlit application that leverages Google's Generative AI API (or Gemini) to generate recipes based on user-provided ingredients. 
+                  <h4 class="text-muted">(Google Tech Exchange)</h4>
+                  <p>I developed a full-stack Streamlit application that leverages Google's Generative AI API (Gemini) to generate recipes based on user-provided ingredients. 
                     The application also creates images of potential dishes and can adjust recipes to meet specific macronutrient requirements. 
                     To enhance functionality, I managed ingredient data in BigQuery, enabling the tracking of usage frequency, 
                     user preferences, and the specific pages of the application where ingredients were input.
                   </p>
-                  <a href="https://github.com/rcast915/masterchefs" class="btn btn-outline-light" role="button">View in Github</a>
+                  <div class="mt-3">
+                    <span class="badge bg-light text-dark me-2">Python</span>
+                    <span class="badge bg-light text-dark me-2">Streamlit</span>
+                    <span class="badge bg-light text-dark me-2">Google AI</span>
+                    <span class="badge bg-light text-dark me-2">BigQuery</span>
+                  </div>
+                  <a href="https://github.com/rcast915/masterchefs" class="btn btn-outline-light mt-3" role="button">View in Github</a>
                 </div>
               </div>
               <!-- Banking App -->
-              <div class="col-md-6">
+              <div class="col-md-6 mb-4">
                 <div class="h-100 p-5 bg-body-tertiary border rounded-3">
                   <h2>Banking App</h2>
-                  <h4>(Utep)</h4>
+                  <h4 class="text-muted">(UTEP)</h4>
                   <p>I developed a Java banking application utilizing abstract classes, interfaces, and the factory design pattern.
                     The application managed data from CSV files, supported various transactions, and implemented role-based access control to ensure security and proper user permissions.
                   </p>
-                  <a href="https://github.com/NNyaklir/AOOP_Project" class="btn btn-outline-light" role="button">View in Github</a>
+                  <div class="mt-3">
+                    <span class="badge bg-light text-dark me-2">Java</span>
+                    <span class="badge bg-light text-dark me-2">OOP</span>
+                    <span class="badge bg-light text-dark me-2">Design Patterns</span>
+                    <span class="badge bg-light text-dark me-2">CSV Processing</span>
+                  </div>
+                  <a href="https://github.com/NNyaklir/AOOP_Project" class="btn btn-outline-light mt-3" role="button">View in Github</a>
                 </div>
               </div>
-
-
-
             </div>
-    
-       
-    
-        
       </div>
-
-      
     </main>
-   
 
     <!-- footer -->
 
@@ -102,8 +152,6 @@
 		</ul>
 		<p class="text-center text-body-secondary">© 2024 Castaneda, Ray</p>
 	</footer>
-
-	
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

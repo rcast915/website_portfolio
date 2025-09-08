@@ -15,7 +15,40 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="main_style.css" />
+
+    <style>
+        /* Force all carousel images to be the same size */
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;  /* Set the height you prefer */
+            object-fit: contain;  /* Contain the image to avoid cropping */
+            object-position: center;  /* Center the image */
+            background-color: #000;  /* Black background for letterboxing */
+        }
+        
+        /* Override main flex layout for this page */
+        main {
+            display: block !important;
+            align-items: unset !important;
+            justify-content: unset !important;
+        }
+        
+        /* Make text background black and text white for readability */
+        .bg-body-tertiary {
+            background-color: black !important;
+        }
+        
+        .bg-body-tertiary h1,
+        .bg-body-tertiary p {
+            color: white !important;
+        }
+      </style>
+
   </head>
+
+
+
+
   <body>
     <!-- header-->
     <header
@@ -31,7 +64,7 @@
 
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-        <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="education.html" class="nav-link">Timeline</a></li>
         <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
         <li class="nav-item">
           <a href="#" class="nav-link active" aria-current="page">Life</a>
@@ -42,12 +75,68 @@
     <!-- main -->
 
 	<main>
+		<!-- Life Content Section -->
+		<div class="container mt-4">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div class="p-5 mb-5 bg-body-tertiary rounded-3">
+						<h1 class="display-5 fw-bold mb-4">About My Life</h1>
+						<p class="fs-5">
+							Beyond my academic and professional pursuits, I enjoy exploring new technologies, 
+							contributing to my community, and staying active in the tech industry. 
+							These photos capture some memorable moments from my university, my community, and my life.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <h1>Under construction</h1>
-       
-	
+		<!-- Auto-scrolling Carousel -->
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-10">
+					<div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+							<button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="images/UtepOrientation.JPG" class="d-block w-100" alt="UTEP Orientation">
+							</div>
+							<div class="carousel-item">
+								<img src="images/orientationbike.JPG" class="d-block w-100" alt="Orientation Bike">
+							</div>
+							<div class="carousel-item">
+								<img src="images/orientationlogo.jpg" class="d-block w-100" alt="Orientation Logo">
+							</div>
+							<div class="carousel-item">
+								<img src="images/IMG_4473 3.JPG" class="d-block w-100" alt="Life Photo 1">
+							</div>
+							<div class="carousel-item">
+								<img src="images/IMG_3797.JPG" class="d-block w-100" alt="Life Photo 2">
+							</div>
+							<div class="carousel-item">
+								<img src="images/FullSizeRender.JPG" class="d-block w-100" alt="Life Photo 3">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
-   
 
     <!-- footer -->
 
@@ -59,8 +148,6 @@
 		</ul>
 		<p class="text-center text-body-secondary">© 2024 Castaneda, Ray</p>
 	</footer>
-
-	
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
